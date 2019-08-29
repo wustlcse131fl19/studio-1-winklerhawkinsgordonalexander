@@ -12,6 +12,15 @@ public class Ordered {
 		int x = ap.nextInt("Value for x?");
 		int y = ap.nextInt("Value for y?");
 		int z = ap.nextInt("Value for z?");
+		boolean comparisonOne = x>y;
+		boolean comparisonTwo = y>z;
+		boolean comparisonThree = x<y;
+		boolean comparisonFour = y<z;
+		boolean isOrdered = (comparisonOne && comparisonTwo) || (comparisonThree && comparisonFour);
+
+		System.out.println(isOrdered);
+
+
 
 	}
 
